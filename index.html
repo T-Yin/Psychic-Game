@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psychic Game</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+<body>
+    
+    <!-- Guess what letter I'm thinking of -->
+
+<div class="container text-center">
+
+    <h1>Psychic Game</h1>
+    <img src="assets/images/fortune-teller.jpg" alt="Fortune Teller">
+    <br>
+    <br>
+<h3>What letter am I thinking of?</h3>
+
+    <!-- Wins: (# of times the user has guessed the letter correctly) -->
+<div class="row">
+    <div class="col-4 m-0 m-auto mt-2 text-left">
+<p id="wins"></p>
+    
+    <!-- Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses) -->
+<p id="losses"></p>
+
+    <!-- Guesses Left: (# of guesses left. This will update) -->
+<p id="guessLeft"></p>
+
+    <!-- Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.) -->
+<p class="border-top m-auto pt-2 pb-2">Your Guesses So Far: <span id="already-guessed">Nothing yet.</span></p>
+
+    <!-- When the player wins, increase the Wins counter and start the game over again (without refreshing the page). -->
+    
+    <!-- When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins). -->
+</div>
+</div>
+</div>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
